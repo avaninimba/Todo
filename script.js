@@ -3,13 +3,26 @@ $(document).ready(function(){
 
         //sessionStorage.mittnamn = "admin";
         //sessionStorage.mittpass = "password";
+
+        var stuffToDo = [
+            "Klipp gräset", 
+            "Betala räkningar",
+            "Köp mjölk", 
+            "Spika upp tavlor"
+            ];
+        var str = JSON.stringify(stuffToDo);
+       
+
         $("#login").click(function(){
         if( $("#User").val()=='admin' && $("#Pass").val()=='password') {
-                $("#welcome").hide();
-                $("#loggedin").append("<p>Hello, admin</p> <br/><input type='button' id='logout' value='Log Out' />");
+                //$("#welcome").hide();
+                $("#loggedin").append("<input type='button' id='logout' value='Log Out' />");
+                $("#p1").text("Hello, admin! <br>Thank you for logging in");
+                $("#p2").text(str);
             }
         else {
-            $("#welcome").append("<p>Hello, please try again</p>");
+            $("#p1").text("Please try again");
+            $("#p2").text("Har du glömt ditt lösenord");
         }
 
         $("#loggedout").click(function() {
