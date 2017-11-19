@@ -55,6 +55,15 @@ p{
 	
 }
 
+#footer{
+	margin:auto;
+	position: fixed;
+	background-color:turquoise;
+	height:50px;
+	width:100%;
+	top:700px;
+}
+
 #header1
 {
 	
