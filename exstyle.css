@@ -34,9 +34,48 @@ a:hover {
 	color: #212121;
 }
 
+h1{
+	font-family: 'Quattrocento', serif;
+}
+
+h3{
+	font-family: 'Quattrocento', serif;
+}
+
+p{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav{
+	margin:auto;
+	position: fixed;
+	background-color:turquoise;
+	height:50px;
+	width:100%;
+	
+}
+
 #header1
 {
 	margin: auto;
 	float: left;
 	top:0px;
+	left:10px;
+	display: flex;
+	display: -webkit-flex;	
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 }
+
+#logo{
+	align-self: center;
+	flex: 1 1 auto;
+}
+
+#contact{
+	align-self: center;
+	flex: 1 1 auto;
+}
+
