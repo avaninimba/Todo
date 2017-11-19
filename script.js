@@ -1,8 +1,8 @@
 $(document).ready(function(){
         // on click Sign In Button checks that username =='admin' and password == 'password'
 
-        //sessionStorage.mittnamn = "admin";
-        //sessionStorage.mittpass = "password";
+        sessionStorage.mittnamn = "admin";
+        sessionStorage.mittpass = "password";
 
         var stuffToDo = [
             "Klipp gräset", 
@@ -14,7 +14,7 @@ $(document).ready(function(){
        
 
         $("#login").click(function(){
-        if( $("#User").val()=='admin' && $("#Pass").val()=='password') {
+        if( $("#User").val()==sessionStorage.mittnamn && $("#Pass").val()==sessionStorage.mittpass) {
                 //$("#welcome").hide();
                 $("#loggedin").append("<input type='button' id='logout' value='Log Out' />");
                 $("#p1").text("Hello, admin! <br>Thank you for logging in");
