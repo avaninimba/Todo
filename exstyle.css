@@ -8,7 +8,6 @@ body {
 	padding:0px;
 }
 
-
 .clear{clear:both;} 
 
 
@@ -33,4 +32,11 @@ a:visited {
 a:hover {
 	text-decoration : none;	
 	color: #212121;
+}
+
+#header1
+{
+	margin: auto;
+	float: left;
+	top:0px;
 }
