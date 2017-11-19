@@ -119,3 +119,7 @@ p{
 	align-self: center;
 	flex: 1 1 0;
 }
+
+#main{
+	padding-top:100px;
+}
